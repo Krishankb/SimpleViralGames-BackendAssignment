@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Update Game</title>
+  </head>
+  <body>
+    <h1>Update Game</h1>
+    <form action="{{ url_for('update_game', game_id=game.id) }}" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" name="name" value="{{ game.name }}"><br>
+
+      <label for="url">URL:</label>
+      <input type="text" name="url" value="{{ game.url }}"><br>
+
+      <label for="author">Author:</label>
+      <input type="text" name="author" value="{{ game.author }}"><br>
+
+      <label for="published_date">Published Date:</label>
+      <input type="text" name="published_date" value="{{ game.published_date }}"><br>
+
+      <input type="submit" value="Update">
+    </form>
+  </body>
+</html>

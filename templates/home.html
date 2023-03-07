@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Games Catalog</title>
+</head>
+<body>
+    <h1>Games Catalog</h1>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>URL</th>
+            <th>Author</th>
+            <th>Published Date</th>
+        </tr>
+        {% for game in games %}
+        <tr>
+            <td>{{ game.name }}</td>
+            <td>{{ game.url }}</td>
+            <td>{{ game.author }}</td>
+            <td>{{ game.published_date }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <form action="/create" method="POST">
+        <h2>Add New Game</h2>
+        <label>Name: </label>
+        <input type="text" name="name" required><br><br>
+        <label>URL: </label>
+        <input type="text" name="url" required><br><br>
+        <label>Author: </label>
+        <input type="text" name="author" required><br><br>
+        <label>Published Date: </label>
+        <input type="text" name="published_date" required><br><br>
+        <input type="submit" value="Add Game">
+    </form>
+</body>
+</html>
