@@ -1,6 +1,10 @@
 # SimpleViralGames-BackendAssignment
 A simple REST CRUD API
 
+## Requirments
+1. flask
+2. SQLAlchemy
+
 
 ## Instructions to run the program
 1. Download the files app,templates folder and runnow file
