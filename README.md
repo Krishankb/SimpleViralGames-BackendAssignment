@@ -21,5 +21,5 @@ A simple REST CRUD API
 ![Screenshot 2023-03-07 172601](https://user-images.githubusercontent.com/30771097/223444442-b066e0e5-bae3-40d3-8d4c-c23eca0e8e06.png)
 
 
-4. Update and delete operations  are performed on the update/<id> ,delete<id>
+4. Update and delete operations  are performed on the /update/[id] , /delete/[id]
 
