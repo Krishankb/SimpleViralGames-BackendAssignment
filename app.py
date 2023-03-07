@@ -82,7 +82,7 @@ def update_game(id):
         game.name = request.form['name']
         game.url = request.form['url']
         game.author = request.form['author']
-        game.published_date = datetime.strptime(request.form['published_date'], '%Y-%m-%dT%H:%M:%S')
+        game.published_date = request.form['published_date']
 
         db.session.commit()
 
